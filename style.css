@@ -1,52 +1,6 @@
-.circle {
-  position: relative;
-  padding: 0;
-  margin: 1em auto;
-  width: 310px;
-  height: 310px;
-  border-radius: 50%;
-  list-style: none;
-  overflow: hidden;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr; /* splitting the circle into 2, equally sized columns/semi-circles */
-  justify-content: center;
-  align-items: center;
-  transition: 1s ease-in-out;
-}
-.circle1 {
-  position: relative;
-  padding: 0;
-  margin: 1em auto;
-  width: 310px;
-  height: 310px;
-  border-radius: 50%;
-  list-style: none;
-  overflow: hidden;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr; /* splitting the circle into 2, equally sized columns/semi-circles */
-  justify-content: center;
-  align-items: center;
-  transition: 1s ease-in-out;
-}
-.circle2 {
-  position: relative;
-  padding: 0;
-  margin: 1em auto;
-  width: 310px;
-  height: 310px;
-  border-radius: 50%;
-  list-style: none;
-  overflow: hidden;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr; /* splitting the circle into 2, equally sized columns/semi-circles */
-  grid-template-areas: 'up1 up2' 'down down';
-  justify-content: center;
-  align-items: center;
-  transition: 1s ease-in-out;
-}
+.circle,
+.circle1,
+.circle2,
 .circle3 {
   position: relative;
   padding: 0;
@@ -58,6 +12,24 @@
   overflow: hidden;
   display: grid;
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in-out;
+}
+.circle {
+  grid-template-columns: 1fr;
+}
+.circle1 {
+  grid-template-columns: 1fr 1fr;
+}
+.circle2 {
+  grid-template-columns: 1fr 1fr; /* splitting the circle into 2, equally sized columns/semi-circles */
+  grid-template-areas: 'up1 up2' 'down down';
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in-out;
+}
+.circle3 {
   grid-template-columns: 1fr 1fr; /* splitting the circle into 2, equally sized columns/semi-circles */
   grid-template-rows: 1fr 1fr;
   justify-content: center;
